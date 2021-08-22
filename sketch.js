@@ -62,7 +62,7 @@ function setup()
   door = createSprite((263+284)/2, 13, 284-263, 7);
   door.addImage(lockImg)
   door.scale = 0.05
-  door.visible = false;
+
 
   door2 = createSprite(298,8, 10,10);
   door2.addImage(lockImg);
@@ -173,7 +173,6 @@ mazeGroup.add(createSprite((154+120)/2, 47, 154-120, 7));
 var invisibles = createSprite((290+312)/2, 562, 312-290, 7);
  invisibles.visible = false;
  mazeGroup.add(invisibles);
-
 
 //  Verticals
  mazeGroup.add(createSprite(314, (535+562)/2, 7, 562-535));
@@ -374,105 +373,110 @@ maze2Group.add(createSprite((488+435)/2, 32, 488-435, 6));
 maze2Group.add(createSprite((564+508)/2, 32, 564-508, 6));
 maze2Group.add(createSprite((464+433)/2, 328, 464-433, 6));
 
+var invisibles2 = createSprite((12+38)/2, 577, 12-38, 6);
+ invisibles.visible = false;
+ maze2Group.add(invisibles2);
+
+
 
 // verticals
-maze2Group.add(createSprite(15, (579+5)/2, 7, 579-5));
-maze2Group.add(createSprite(41, (159+32)/2, 7, 159-32));
-maze2Group.add(createSprite(41, (155+32)/2, 7, 155-32));
-maze2Group.add(createSprite(41, (382+327)/2, 7, 382-327));
-maze2Group.add(createSprite(41, (530+402)/2, 7, 530-402));
-maze2Group.add(createSprite(41, (578+550)/2, 7, 578-550));
-maze2Group.add(createSprite(41, (308+230)/2, 7, 308-230));
-maze2Group.add(createSprite(66, (181+57)/2, 7, 181-57));
-maze2Group.add(createSprite(66, (352+254)/2, 7, 352-254));
-maze2Group.add(createSprite(66, (528+428)/2, 7, 528-428));
-maze2Group.add(createSprite(90, (34+5)/2, 7, 34-5));
-maze2Group.add(createSprite(90, (159+128)/2, 7, 159-128));
-maze2Group.add(createSprite(90, (209+178)/2, 7, 209-177));
-maze2Group.add(createSprite(90, (503+451)/2, 7, 503-451));
-maze2Group.add(createSprite(114, (134+104)/2, 7, 134-104));
-maze2Group.add(createSprite(114, (183+153)/2, 7, 183-153));
-maze2Group.add(createSprite(114, (356+278)/2, 7, 356-278));
-maze2Group.add(createSprite(114, (481+401)/2, 7, 481-401));
-maze2Group.add(createSprite(140, (531+476)/2, 7, 531-476));
-maze2Group.add(createSprite(140, (455+351)/2, 7, 455-351));
-maze2Group.add(createSprite(140, (332+303)/2, 7, 332-303));
-maze2Group.add(createSprite(140, (332+303)/2, 7, 332-303));
-maze2Group.add(createSprite(139, (209+129)/2, 7, 209-129));
-maze2Group.add(createSprite(165, (134+104)/2, 7, 134-104));
-maze2Group.add(createSprite(165, (454+277)/2, 7, 454-277));
-maze2Group.add(createSprite(165, (579+549)/2, 7, 579-549));
-maze2Group.add(createSprite(189, (555+527)/2, 7, 555-527));
-maze2Group.add(createSprite(189, (480+252)/2, 7, 480-252));
-maze2Group.add(createSprite(189, (160+129)/2, 7, 160-129));
-maze2Group.add(createSprite(189, (84+30)/2, 7, 84-30));
-maze2Group.add(createSprite(213, (58+5)/2, 7, 58-5));
-maze2Group.add(createSprite(213, (132+105)/2, 7, 132-105));
-maze2Group.add(createSprite(213, (184+155)/2, 7, 184-155));
-maze2Group.add(createSprite(213, (228+457)/2, 7, 457-228));
-maze2Group.add(createSprite(238, (35+4)/2, 7, 35-4));
-maze2Group.add(createSprite(238, (109+80)/2, 7, 109-80));
-maze2Group.add(createSprite(238, (159+130)/2, 7, 159-130));
-maze2Group.add(createSprite(238, (381+229)/2, 7, 381-229));
-maze2Group.add(createSprite(238, (554+524)/2, 7, 554-524));
-maze2Group.add(createSprite(263, (554+501)/2, 7, 554-501));
-maze2Group.add(createSprite(263, (455+427)/2, 7, 455-427));
-maze2Group.add(createSprite(263, (356+328)/2, 7, 356-328));
-maze2Group.add(createSprite(263, (307+278)/2, 7, 307-278));
-maze2Group.add(createSprite(263, (256+204)/2, 7, 256-204));
-maze2Group.add(createSprite(263, (34+5)/2, 7, 34-5));
-maze2Group.add(createSprite(288, (109+5)/2, 7, 109-5));
-maze2Group.add(createSprite(288, (256+179)/2, 7, 256-179));
-maze2Group.add(createSprite(288, (382+327)/2, 7, 382-327));
-maze2Group.add(createSprite(288, (504+402)/2, 7, 504-402));
-maze2Group.add(createSprite(288, (554+524)/2, 7, 554-524));
-maze2Group.add(createSprite(313, (506+476)/2, 7, 506-476));
-maze2Group.add(createSprite(313, (455+303)/2, 7, 455-303));
-maze2Group.add(createSprite(313, (234+155)/2, 7, 234-155));
-maze2Group.add(createSprite(313, (136+107)/2, 7, 136-107));
-maze2Group.add(createSprite(313, (86+57)/2, 7, 86-57));
-maze2Group.add(createSprite(338, (161+130)/2, 7, 161-130));
-maze2Group.add(createSprite(338, (258+180)/2, 7, 258-180));
-maze2Group.add(createSprite(338, (530+377)/2, 7, 530-377));
-maze2Group.add(createSprite(362, (531+477)/2, 7, 531-477));
-maze2Group.add(createSprite(362, (431+378)/2, 7, 431-378));
-maze2Group.add(createSprite(362, (284+229)/2, 7, 284-229));
-maze2Group.add(createSprite(362, (209+181)/2, 7, 209-181));
-maze2Group.add(createSprite(362, (61+6)/2, 7, 61-6));
-maze2Group.add(createSprite(387, (59+30)/2, 7, 59-30));
-maze2Group.add(createSprite(387, (181+129)/2, 7, 181-129));
-maze2Group.add(createSprite(387, (234+203)/2, 7, 234-203));
-maze2Group.add(createSprite(387, (333+302)/2, 7, 333-302));
-maze2Group.add(createSprite(387, (381+354)/2, 7, 381-354));
-maze2Group.add(createSprite(387, (456+427)/2, 7, 456-437));
-maze2Group.add(createSprite(412, (59+6)/2, 7, 59-6));
-maze2Group.add(createSprite(412, (259+105)/2, 7, 259-106));
-maze2Group.add(createSprite(412, (357+328)/2, 7, 357-328));
-maze2Group.add(createSprite(436, (505+451)/2, 7, 505-451));
-maze2Group.add(createSprite(436, (406+352)/2, 7, 406-352));
-maze2Group.add(createSprite(436, (331+304)/2, 7, 331-304));
-maze2Group.add(createSprite(436, (258+31)/2, 7, 258-31));
-maze2Group.add(createSprite(461, (181+56)/2, 7, 181-56));
-maze2Group.add(createSprite(461, (257+204)/2, 7, 257-204));
-maze2Group.add(createSprite(461, (354+327)/2, 7, 354-324));
-maze2Group.add(createSprite(461, (432+401)/2, 7, 432-401));
-maze2Group.add(createSprite(486, (555+476)/2, 7, 555-476));
-maze2Group.add(createSprite(486, (404+377)/2, 7, 404-377));
-maze2Group.add(createSprite(486, (357+104)/2, 7, 357-104));
-maze2Group.add(createSprite(486, (58+32)/2, 7, 58-32));
-maze2Group.add(createSprite(460, (307+278)/2, 7, 307-278));
-maze2Group.add(createSprite(510, (331+105)/2, 7, 331-105));
-maze2Group.add(createSprite(510, (432+376)/2, 7, 432-376));
-maze2Group.add(createSprite(510, (554+452)/2, 7, 554-452));
-maze2Group.add(createSprite(535, (554+502)/2, 7, 554-502));
-maze2Group.add(createSprite(535, (456+352)/2, 7, 456-352));
-maze2Group.add(createSprite(535, (286+131)/2, 7, 286-131));
-maze2Group.add(createSprite(560, (85+29)/2, 7, 85-29));
-maze2Group.add(createSprite(560, (257+206)/2, 7, 257-206));
-maze2Group.add(createSprite(560, (357+303)/2, 7, 357-303));
-maze2Group.add(createSprite(560, (481+378)/2, 7, 481-378));
-maze2Group.add(createSprite(584, (578+5)/2, 7, 578-5));
-maze2Group.add(createSprite(536, (59+31)/2, 7, 59-31));
+maze2Group.add(createSprite(15, (579+5)/2, 6, 579-5));
+maze2Group.add(createSprite(41, (159+32)/2, 6, 159-32));
+maze2Group.add(createSprite(41, (155+32)/2, 6, 155-32));
+maze2Group.add(createSprite(41, (382+327)/2, 6, 382-327));
+maze2Group.add(createSprite(41, (530+402)/2, 6, 530-402));
+maze2Group.add(createSprite(41, (578+550)/2, 6, 578-550));
+maze2Group.add(createSprite(41, (308+230)/2, 6, 308-230));
+maze2Group.add(createSprite(66, (181+57)/2, 6, 181-57));
+maze2Group.add(createSprite(66, (352+254)/2, 6, 352-254));
+maze2Group.add(createSprite(66, (528+428)/2, 6, 528-428));
+maze2Group.add(createSprite(90, (34+5)/2, 6, 34-5));
+maze2Group.add(createSprite(90, (159+128)/2, 6, 159-128));
+maze2Group.add(createSprite(90, (209+178)/2, 6, 209-177));
+maze2Group.add(createSprite(90, (503+451)/2, 6, 503-451));
+maze2Group.add(createSprite(114, (134+104)/2, 6, 134-104));
+maze2Group.add(createSprite(114, (183+153)/2, 6, 183-153));
+maze2Group.add(createSprite(114, (356+278)/2, 6, 356-278));
+maze2Group.add(createSprite(114, (481+401)/2, 6, 481-401));
+maze2Group.add(createSprite(140, (531+476)/2, 6, 531-476));
+maze2Group.add(createSprite(140, (455+351)/2, 6, 455-351));
+maze2Group.add(createSprite(140, (332+303)/2, 6, 332-303));
+maze2Group.add(createSprite(140, (332+303)/2, 6, 332-303));
+maze2Group.add(createSprite(139, (209+129)/2, 6, 209-129));
+maze2Group.add(createSprite(165, (134+104)/2, 6, 134-104));
+maze2Group.add(createSprite(165, (454+277)/2, 6, 454-277));
+maze2Group.add(createSprite(165, (579+549)/2, 6, 579-549));
+maze2Group.add(createSprite(189, (555+527)/2, 6, 555-527));
+maze2Group.add(createSprite(189, (480+252)/2, 6, 480-252));
+maze2Group.add(createSprite(189, (160+129)/2, 6, 160-129));
+maze2Group.add(createSprite(189, (84+30)/2, 6, 84-30));
+maze2Group.add(createSprite(213, (58+5)/2, 6, 58-5));
+maze2Group.add(createSprite(213, (132+105)/2, 6, 132-105));
+maze2Group.add(createSprite(213, (184+155)/2, 6, 184-155));
+maze2Group.add(createSprite(213, (228+457)/2, 6, 457-228));
+maze2Group.add(createSprite(238, (35+4)/2, 6, 35-4));
+maze2Group.add(createSprite(238, (109+80)/2, 6, 109-80));
+maze2Group.add(createSprite(238, (159+130)/2, 6, 159-130));
+maze2Group.add(createSprite(238, (381+229)/2, 6, 381-229));
+maze2Group.add(createSprite(238, (554+524)/2, 6, 554-524));
+maze2Group.add(createSprite(263, (554+501)/2, 6, 554-501));
+maze2Group.add(createSprite(263, (455+427)/2, 6, 455-427));
+maze2Group.add(createSprite(263, (356+328)/2, 6, 356-328));
+maze2Group.add(createSprite(263, (307+278)/2, 6, 307-278));
+maze2Group.add(createSprite(263, (256+204)/2, 6, 256-204));
+maze2Group.add(createSprite(263, (34+5)/2, 6, 34-5));
+maze2Group.add(createSprite(288, (109+5)/2, 6, 109-5));
+maze2Group.add(createSprite(288, (256+179)/2, 6, 256-179));
+maze2Group.add(createSprite(288, (382+327)/2, 6, 382-327));
+maze2Group.add(createSprite(288, (504+402)/2, 6, 504-402));
+maze2Group.add(createSprite(288, (554+524)/2, 6, 554-524));
+maze2Group.add(createSprite(313, (506+476)/2, 6, 506-476));
+maze2Group.add(createSprite(313, (455+303)/2, 6, 455-303));
+maze2Group.add(createSprite(313, (234+155)/2, 6, 234-155));
+maze2Group.add(createSprite(313, (136+107)/2, 6, 136-107));
+maze2Group.add(createSprite(313, (86+57)/2, 6, 86-57));
+maze2Group.add(createSprite(338, (161+130)/2, 6, 161-130));
+maze2Group.add(createSprite(338, (258+180)/2, 6, 258-180));
+maze2Group.add(createSprite(338, (530+377)/2, 6, 530-377));
+maze2Group.add(createSprite(362, (531+477)/2, 6, 531-477));
+maze2Group.add(createSprite(362, (431+378)/2, 6, 431-378));
+maze2Group.add(createSprite(362, (284+229)/2, 6, 284-229));
+maze2Group.add(createSprite(362, (209+181)/2, 6, 209-181));
+maze2Group.add(createSprite(362, (61+6)/2, 6, 61-6));
+maze2Group.add(createSprite(387, (59+30)/2, 6, 59-30));
+maze2Group.add(createSprite(387, (181+129)/2, 6, 181-129));
+maze2Group.add(createSprite(387, (234+203)/2, 6, 234-203));
+maze2Group.add(createSprite(387, (333+302)/2, 6, 333-302));
+maze2Group.add(createSprite(387, (381+354)/2, 6, 381-354));
+maze2Group.add(createSprite(387, (456+427)/2, 6, 456-437));
+maze2Group.add(createSprite(412, (59+6)/2, 6, 59-6));
+maze2Group.add(createSprite(412, (259+105)/2, 6, 259-106));
+maze2Group.add(createSprite(412, (357+328)/2, 6, 357-328));
+maze2Group.add(createSprite(436, (505+451)/2, 6, 505-451));
+maze2Group.add(createSprite(436, (406+352)/2, 6, 406-352));
+maze2Group.add(createSprite(436, (331+304)/2, 6, 331-304));
+maze2Group.add(createSprite(436, (258+31)/2, 6, 258-31));
+maze2Group.add(createSprite(461, (181+56)/2, 6, 181-56));
+maze2Group.add(createSprite(461, (257+204)/2, 6, 257-204));
+maze2Group.add(createSprite(461, (354+327)/2, 6, 354-324));
+maze2Group.add(createSprite(461, (432+401)/2, 6, 432-401));
+maze2Group.add(createSprite(486, (555+476)/2, 6, 555-476));
+maze2Group.add(createSprite(486, (404+377)/2, 6, 404-377));
+maze2Group.add(createSprite(486, (357+104)/2, 6, 357-104));
+maze2Group.add(createSprite(486, (58+32)/2, 6, 58-32));
+maze2Group.add(createSprite(460, (307+278)/2, 6, 307-278));
+maze2Group.add(createSprite(510, (331+105)/2, 6, 331-105));
+maze2Group.add(createSprite(510, (432+376)/2, 6, 432-376));
+maze2Group.add(createSprite(510, (554+452)/2, 6, 554-452));
+maze2Group.add(createSprite(535, (554+502)/2, 6, 554-502));
+maze2Group.add(createSprite(535, (456+352)/2, 6, 456-352));
+maze2Group.add(createSprite(535, (286+131)/2, 6, 286-131));
+maze2Group.add(createSprite(560, (85+29)/2, 6, 85-29));
+maze2Group.add(createSprite(560, (257+206)/2, 6, 257-206));
+maze2Group.add(createSprite(560, (357+303)/2, 6, 357-303));
+maze2Group.add(createSprite(560, (481+378)/2, 6, 481-378));
+maze2Group.add(createSprite(584, (578+5)/2, 6, 578-5));
+maze2Group.add(createSprite(536, (59+31)/2, 6, 59-31));
 
 mazeGroup.setVisibleEach(false);
 maze2Group.setVisibleEach(false);
@@ -489,6 +493,10 @@ function draw()
 
 // timer
   if(frameCount%50 === 0 && timer > 0 && gameState===PLAY){
+    timer = timer - 1
+  }
+
+  if(frameCount%50 === 0 && timer > 0 && gameState===2){
     timer = timer - 1
   }
 
@@ -525,7 +533,6 @@ function draw()
   if(gameState === START){
     mazeGroup.setVisibleEach(false);
     maze2Group.setVisibleEach(false);
-    // thomas.thomas.visible(false);
   }
 
 // PLAY
@@ -544,7 +551,6 @@ function draw()
   thomas.thomas.bounceOff(maze2Group);
   door2.visible = true;
   gold2.visible = true;
-  // enemy1 = new Enemy;
  }
 
   // transition
@@ -570,6 +576,12 @@ function draw()
   if(thomas.thomas.collide(door2) && secondKeyPLAY === true){
     door2.destroy()
     image(success, 90,90,400,400);
+    gamesState = END;
+  }
+
+  if(gameState === 0){
+    image(success, 90,90,400,400);
+    timer.destroy()
   }
 
 
@@ -578,6 +590,5 @@ function draw()
 }
 
 // function mouseClicked(){
-  // console.log(mouseX+","+mouseY);
+//   console.log(mouseX+","+mouseY);
 // }
-
